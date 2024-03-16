@@ -7,10 +7,6 @@ func isPrime(primes []int, number int) bool {
 		return true
 	}
 
-	if number%2 == 0 || number%5 == 0 {
-		return false
-	}
-
 	square := int(math.Floor(math.Sqrt(float64(number))))
 	for _, prime := range primes {
 		if prime > square {
