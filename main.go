@@ -3,10 +3,6 @@ package main
 import "math"
 
 func isPrime(primes []int, number int) bool {
-	if number == 2 || number == 5 {
-		return true
-	}
-
 	square := int(math.Floor(math.Sqrt(float64(number))))
 	for _, prime := range primes {
 		if prime > square {
