@@ -62,33 +62,33 @@ This concludes our naive algorithm implementation.
 
 ```css
 number: 29;
-i: 2;  i < number: true; number%i == 0: false;
-i: 3;  i < number: true; number%i == 0: false;
-i: 4;  i < number: true; number%i == 0: false;
-i: 5;  i < number: true; number%i == 0: false;
-i: 6;  i < number: true; number%i == 0: false;
-i: 7;  i < number: true; number%i == 0: false;
-i: 8;  i < number: true; number%i == 0: false;
-i: 9;  i < number: true; number%i == 0: false;
-i: 10; i < number: true; number%i == 0: false;
-i: 11; i < number: true; number%i == 0: false;
-i: 12; i < number: true; number%i == 0: false;
-i: 13; i < number: true; number%i == 0: false;
-i: 14; i < number: true; number%i == 0: false;
-i: 15; i < number: true; number%i == 0: false;
-i: 16; i < number: true; number%i == 0: false;
-i: 17; i < number: true; number%i == 0: false;
-i: 18; i < number: true; number%i == 0: false;
-i: 19; i < number: true; number%i == 0: false;
-i: 20; i < number: true; number%i == 0: false;
-i: 21; i < number: true; number%i == 0: false;
-i: 22; i < number: true; number%i == 0: false;
-i: 23; i < number: true; number%i == 0: false;
-i: 24; i < number: true; number%i == 0: false;
-i: 25; i < number: true; number%i == 0: false;
-i: 26; i < number: true; number%i == 0: false;
-i: 27; i < number: true; number%i == 0: false;
-i: 28; i < number: true; number%i == 0: false;
+i:  2;  2 < 29: true;  29%2 == 0: false;
+i:  3;  3 < 29: true;  29%3 == 0: false;
+i:  4;  4 < 29: true;  29%4 == 0: false;
+i:  5;  5 < 29: true;  29%5 == 0: false;
+i:  6;  6 < 29: true;  29%6 == 0: false;
+i:  7;  7 < 29: true;  29%7 == 0: false;
+i:  8;  8 < 29: true;  29%8 == 0: false;
+i:  9;  9 < 29: true;  29%9 == 0: false;
+i: 10; 10 < 29: true; 29%10 == 0: false;
+i: 11; 11 < 29: true; 29%11 == 0: false;
+i: 12; 12 < 29: true; 29%12 == 0: false;
+i: 13; 13 < 29: true; 29%13 == 0: false;
+i: 14; 14 < 29: true; 29%14 == 0: false;
+i: 15; 15 < 29: true; 29%15 == 0: false;
+i: 16; 16 < 29: true; 29%16 == 0: false;
+i: 17; 17 < 29: true; 29%17 == 0: false;
+i: 18; 18 < 29: true; 29%18 == 0: false;
+i: 19; 19 < 29: true; 29%19 == 0: false;
+i: 20; 20 < 29: true; 29%20 == 0: false;
+i: 21; 21 < 29: true; 29%21 == 0: false;
+i: 22; 22 < 29: true; 29%22 == 0: false;
+i: 23; 23 < 29: true; 29%23 == 0: false;
+i: 24; 24 < 29: true; 29%24 == 0: false;
+i: 25; 25 < 29: true; 29%25 == 0: false;
+i: 26; 26 < 29: true; 29%26 == 0: false;
+i: 27; 27 < 29: true; 29%27 == 0: false;
+i: 28; 28 < 29: true; 29%28 == 0: false;
 return true;
 ```
 
@@ -131,20 +131,20 @@ With this we should get the same results as with our first implementation, but t
 ```css
 number: 29;
 number%2 == 0: false;
-i: 3;  i < number: true; number%i == 0: false;
-i: 5;  i < number: true; number%i == 0: false;
-i: 7;  i < number: true; number%i == 0: false;
-i: 9;  i < number: true; number%i == 0: false;
-i: 11; i < number: true; number%i == 0: false;
-i: 13; i < number: true; number%i == 0: false;
-i: 15; i < number: true; number%i == 0: false;
-i: 17; i < number: true; number%i == 0: false;
-i: 19; i < number: true; number%i == 0: false;
-i: 21; i < number: true; number%i == 0: false;
-i: 23; i < number: true; number%i == 0: false;
-i: 25; i < number: true; number%i == 0: false;
-i: 27; i < number: true; number%i == 0: false;
-i: 28; i < number: true; number%i == 0: false;
+i:  3;  3 < 29: true;  29%3 == 0: false;
+i:  5;  5 < 29: true;  29%5 == 0: false;
+i:  7;  7 < 29: true;  29%7 == 0: false;
+i:  9;  9 < 29: true;  29%9 == 0: false;
+i: 11; 11 < 29: true; 29%11 == 0: false;
+i: 13; 13 < 29: true; 29%13 == 0: false;
+i: 15; 15 < 29: true; 29%15 == 0: false;
+i: 17; 17 < 29: true; 29%17 == 0: false;
+i: 19; 19 < 29: true; 29%19 == 0: false;
+i: 21; 21 < 29: true; 29%21 == 0: false;
+i: 23; 23 < 29: true; 29%23 == 0: false;
+i: 25; 25 < 29: true; 29%25 == 0: false;
+i: 27; 27 < 29: true; 29%27 == 0: false;
+i: 28; 28 < 29: true; 29%28 == 0: false;
 return true;
 ```
 
@@ -185,6 +185,9 @@ func main() {
 
 ```css
 number: 29;
+
+primes: [2]
+
 i: 3; isPrime: true;
 primes: [2 3]
 

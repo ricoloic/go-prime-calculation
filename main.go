@@ -45,7 +45,10 @@ func main() {
 
 		if isPrime {
 			primes = append(primes, number)
-			fmt.Fprintf(w, "%d\n", number)
+			_, err := fmt.Fprintf(w, "%d\n", number)
+			if err != nil {
+				return
+			}
 		}
 	}
 
