@@ -11,7 +11,7 @@ import (
 func main() {
 	startTime := time.Now()
 
-	end := 100_000_000
+	end := 1_000_000
 	primes := []int{2}
 
 	cwd, err := os.Getwd()

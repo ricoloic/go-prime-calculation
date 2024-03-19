@@ -46,10 +46,11 @@ func main() {
     number := 29
     for i := 2; i < number; i++ {
         if number%i == 0 {
-            return false
+            println(false)
+			return
         }
     }
-    return true
+	println(true)
 }
 ```
 
@@ -109,10 +110,11 @@ func main() {
 
     for i := 3; i < number; i += 2 {
         if number%i == 0 {
-            return false
+            println(false)
+			return
         }
     }
-    return true
+    println(true)
 }
 ```
 
@@ -157,23 +159,108 @@ func main() {
     primes := []int{2}
     number := 29
 
-    for i := 3; i < number; i += 2 {
+	for i := 3; i <= number; i += 2 {
         isPrime := true
-
         for _, prime := range primes {
-            if prime > number { break }
-
-            if number%prime == 0 {
+            if i%prime == 0 {
                 isPrime = false
                 break
             }
         }
 
         if isPrime {
-            primes = append(primes, number)
+            primes = append(primes, i)
         }
-		
-		if
+    }
+
+    if primes[len(primes) - 1] == number {
+        println(true)
+    } else {
+        println(false)
+    }
+}
+```
+
+#### Example
+
+```css
+number: 29;
+i: 3; isPrime: true;
+primes: [2 3]
+
+i: 5; isPrime: true;
+primes: [2 3 5]
+
+i: 7; isPrime: true;
+primes: [2 3 5 7]
+
+i: 9; isPrime: false;
+primes: [2 3 5 7]
+
+i: 11; isPrime: true;
+primes: [2 3 5 7 11]
+
+i: 13; isPrime: true;
+primes: [2 3 5 7 11 13]
+
+i: 15; isPrime: false;
+primes: [2 3 5 7 11 13]
+
+i: 17; isPrime: true;
+primes: [2 3 5 7 11 13 17]
+
+i: 19; isPrime: true;
+primes: [2 3 5 7 11 13 17 19]
+
+i: 21; isPrime: false;
+primes: [2 3 5 7 11 13 17 19]
+
+i: 23; isPrime: true;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 25; isPrime: false;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 27; isPrime: false;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 29; isPrime: true;
+primes: [2 3 5 7 11 13 17 19 23 29]
+
+```
+
+### Stopping after the square root
+
+```go
+func main() {
+    primes := []int{2}
+    number := 29
+
+    for i := 3; i <= number; i += 2 {
+        square := int(math.Floor(math.Sqrt(float64(i))))
+        
+        isPrime := true
+        for _, prime := range primes {
+            if square < prime {
+                isPrime = true
+                break
+            }
+			
+            if i%prime == 0 {
+                isPrime = false
+                break
+            }
+        }
+
+        if isPrime {
+            primes = append(primes, i)
+        }
+    }
+
+    if primes[len(primes) - 1] == number {
+        println(true)
+    } else {
+        println(false)
     }
 }
 ```
