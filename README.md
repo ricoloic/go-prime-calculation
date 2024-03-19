@@ -5,7 +5,7 @@ There are methods to calculating prime numbers efficiently, but we can always st
 ## Definition and Usage
 
 We first need to define it before trying to calculate it.
-
+x
 For more information on prime numbers you can take a look at the [wiki page](https://en.wikipedia.org/wiki/Prime_number) for it.
 
 ### What is a prime number
@@ -186,47 +186,101 @@ func main() {
 ```css
 number: 29;
 
-primes: [2]
-
+i: 3; prime: 2;
 i: 3; isPrime: true;
 primes: [2 3]
 
+i: 5; prime: 2;
+i: 5; prime: 3;
 i: 5; isPrime: true;
 primes: [2 3 5]
 
+i: 7; prime: 2;
+i: 7; prime: 3;
+i: 7; prime: 5;
 i: 7; isPrime: true;
 primes: [2 3 5 7]
 
+i: 9; prime: 2;
+i: 9; prime: 3;
 i: 9; isPrime: false;
 primes: [2 3 5 7]
 
+i: 11; prime: 2;
+i: 11; prime: 3;
+i: 11; prime: 5;
+i: 11; prime: 7;
 i: 11; isPrime: true;
 primes: [2 3 5 7 11]
 
+i: 13; prime: 2;
+i: 13; prime: 3;
+i: 13; prime: 5;
+i: 13; prime: 7;
+i: 13; prime: 11;
 i: 13; isPrime: true;
 primes: [2 3 5 7 11 13]
 
+i: 15; prime: 2;
+i: 15; prime: 3;
 i: 15; isPrime: false;
 primes: [2 3 5 7 11 13]
 
+i: 17; prime: 2;
+i: 17; prime: 3;
+i: 17; prime: 5;
+i: 17; prime: 7;
+i: 17; prime: 11;
+i: 17; prime: 13;
 i: 17; isPrime: true;
 primes: [2 3 5 7 11 13 17]
 
+i: 19; prime: 2;
+i: 19; prime: 3;
+i: 19; prime: 5;
+i: 19; prime: 7;
+i: 19; prime: 11;
+i: 19; prime: 13;
+i: 19; prime: 17;
 i: 19; isPrime: true;
 primes: [2 3 5 7 11 13 17 19]
 
+i: 21; prime: 2;
+i: 21; prime: 3;
 i: 21; isPrime: false;
 primes: [2 3 5 7 11 13 17 19]
 
+i: 23; prime: 2;
+i: 23; prime: 3;
+i: 23; prime: 5;
+i: 23; prime: 7;
+i: 23; prime: 11;
+i: 23; prime: 13;
+i: 23; prime: 17;
+i: 23; prime: 19;
 i: 23; isPrime: true;
 primes: [2 3 5 7 11 13 17 19 23]
 
+i: 25; prime: 2;
+i: 25; prime: 3;
+i: 25; prime: 5;
 i: 25; isPrime: false;
 primes: [2 3 5 7 11 13 17 19 23]
 
+i: 27; prime: 2;
+i: 27; prime: 3;
 i: 27; isPrime: false;
 primes: [2 3 5 7 11 13 17 19 23]
 
+i: 29; prime: 2;
+i: 29; prime: 3;
+i: 29; prime: 5;
+i: 29; prime: 7;
+i: 29; prime: 11;
+i: 29; prime: 13;
+i: 29; prime: 17;
+i: 29; prime: 19;
+i: 29; prime: 23;
 i: 29; isPrime: true;
 primes: [2 3 5 7 11 13 17 19 23 29]
 
@@ -266,4 +320,83 @@ func main() {
         println(false)
     }
 }
+```
+
+```css
+i: 3; prime: 2;
+i: 3; isPrime: true;
+primes: [2 3]
+
+i: 5; prime: 2;
+i: 5; prime: 3;
+i: 5; isPrime: true;
+primes: [2 3 5]
+
+i: 7; prime: 2;
+i: 7; prime: 3;
+i: 7; isPrime: true;
+primes: [2 3 5 7]
+
+i: 9; prime: 2;
+i: 9; prime: 3;
+i: 9; isPrime: false;
+primes: [2 3 5 7]
+
+i: 11; prime: 2;
+i: 11; prime: 3;
+i: 11; prime: 5;
+i: 11; isPrime: true;
+primes: [2 3 5 7 11]
+
+i: 13; prime: 2;
+i: 13; prime: 3;
+i: 13; prime: 5;
+i: 13; isPrime: true;
+primes: [2 3 5 7 11 13]
+
+i: 15; prime: 2;
+i: 15; prime: 3;
+i: 15; isPrime: false;
+primes: [2 3 5 7 11 13]
+
+i: 17; prime: 2;
+i: 17; prime: 3;
+i: 17; prime: 5;
+i: 17; isPrime: true;
+primes: [2 3 5 7 11 13 17]
+
+i: 19; prime: 2;
+i: 19; prime: 3;
+i: 19; prime: 5;
+i: 19; isPrime: true;
+primes: [2 3 5 7 11 13 17 19]
+
+i: 21; prime: 2;
+i: 21; prime: 3;
+i: 21; isPrime: false;
+primes: [2 3 5 7 11 13 17 19]
+
+i: 23; prime: 2;
+i: 23; prime: 3;
+i: 23; prime: 5;
+i: 23; isPrime: true;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 25; prime: 2;
+i: 25; prime: 3;
+i: 25; prime: 5;
+i: 25; isPrime: false;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 27; prime: 2;
+i: 27; prime: 3;
+i: 27; isPrime: false;
+primes: [2 3 5 7 11 13 17 19 23]
+
+i: 29; prime: 2;
+i: 29; prime: 3;
+i: 29; prime: 5;
+i: 29; prime: 7;
+i: 29; isPrime: true;
+primes: [2 3 5 7 11 13 17 19 23 29]
 ```
