@@ -322,6 +322,8 @@ func main() {
 }
 ```
 
+#### Example
+
 ```css
 i: 3; prime: 2;
 i: 3; isPrime: true;
